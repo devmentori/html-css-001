@@ -12,11 +12,8 @@
 
 /*UNIVERSAL STYLES*/
 * {
-    padding: 0;
     margin: 0;
     text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
 }
 
 p.clear {
@@ -25,6 +22,9 @@ p.clear {
 
 body {
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a {
+    color: black;
 }
 
 /*HEADER STYLES*/
@@ -161,16 +161,16 @@ div#bottom a {
 div#product {
     margin: 0 30px;
     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
 }
 .box {
     width: 160px;
     overflow: hidden;
     position: relative;
-    display: inline-grid;
-    grid-gap: 30px;
-    justify-content: stretch;
-    margin-right: 15px;
-
+    padding: 10px 0;
 }
 .image {
     height: 200px;
@@ -206,12 +206,12 @@ div.details .productname a:visited, div.details .productname a:active {
 }
 .hover .overlay {
     text-decoration: none;
+    width: 100%;
+    height: 100%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,12 +222,13 @@ div.details .productname a:visited, div.details .productname a:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: whitesmoke;
     font-weight: 300;
     font-size: smaller;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-radius: 1px;
+    background-color: black;
 }
 .hover {
     visibility: hidden;
@@ -235,6 +236,91 @@ div.details .productname a:visited, div.details .productname a:active {
 .box:hover .hover {
     visibility: visible;
 }
+/*Product Pages Styles*/
+div#prodhead {
+    text-align: left;
+    margin: 0 30px;
+    display: flex;
+}
+div#prodhead a {
+    text-decoration: none;
+    color: black;
+    font-size: .9em;
+    font-weight: 200;
+}
+div#bottom {
+    margin: 0 30px;
+}
+div#bottom p#otherprod {
+    font-size: 2em;
+    text-align: left;
+    font-weight: bold;
+} 
+
+div#productdisplay {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 30px;
+
+}
+div.view img {
+    display: block;
+    width: 50px;
+    margin-bottom: 10px;
+}
+div.display img {
+    width: 90%;
+    margin: 0 10px;
+}
+div.description {
+    width: 180%;
+}
+.display img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    position: relative;
+}
+.image2 {
+    visibility: hidden;
+}
+h3.prodname {
+    font-size: 1.4em;
+    margin: 20px 0;
+}
+h4.describe, form.describe {
+    font-size: .9em;
+    font-weight: 400;
+    margin: 20px 0;
+}
+p.pricetag {
+    font-size: 1em;
+    font-weight: 600;
+    margin: 20px 0;
+}
+p.describe, ul.describe {
+    font-size: .8em;
+}
+select#size {
+    width: 100%;
+    height: 50px;
+    padding: 0 5px 0 30px;
+}
+input[type="number"] {
+    width: 60px;
+    height: 50px;
+    padding: 0 5px 0 30px;
+}
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    color: white;
+    border: none;
+    background-color: rgb(170, 170, 170);
+
+}
+
 
 
 /*LOOKBOOK STYLES*/
