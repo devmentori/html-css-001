@@ -1,0 +1,33 @@
+p.text-align {
+  text-align: center;
+  padding: 0 auto 0 auto;
+}
+
+h3.size {
+  font-size: large;
+  font-weight: lighter;
+  text-align: center;
+}
+
+input.height {
+  height: 5em;
+  width: 30%;
+}
+
+input {
+  height: 5em;
+  width: 10%;
+  margin-right: .5em;
+}
+
+form {
+  text-align: center;
+}
+
+.color {
+  text-decoration-color: black;
+  color: black;
+}
+::placeholder{
+  margin: 0 20em 0 0;
+}
