@@ -1,0 +1,333 @@
+/************************************************************
+    CSS Stylesheets
+    html-accessment-001
+    DevMentor
+
+    Created:        04.05.2022
+    Contributors:   @Air, @PraisesPJMT, 
+                    @Omode Mary and @Wealth
+    Git Repo:       https://github.com/devmentori/html-css-001
+*************************************************************/
+
+
+/*UNIVERSAL STYLES*/
+* {
+    margin: 0;
+    text-decoration: none;
+}
+
+p.clear {
+    clear: both;
+}
+
+body {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a {
+    color: black;
+}
+
+/*HEADER STYLES*/
+header {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    
+}
+nav {
+    width: 100%;
+    display: inline-block;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+ul#nav {
+    float: left;
+    margin-left: 30px;
+}
+ul#nav li {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+    font-size: 1em;
+    margin: 30px 10px;
+    font-weight: 500;
+}
+ul#nav li:hover {
+    border-bottom: 1px solid black;
+    transition: .3s ease;
+}
+nav label {
+    display: inline-block;
+    margin: 20px 60px;
+}
+nav label a {
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: black;
+
+    margin: 50px 30px;
+}
+nav div#leftnav {
+    float: right;
+}
+nav div#leftnav span.social img {
+    width: 20px;
+    height: 20px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+nav div#leftnav span#cart img {
+    width: 25px;
+    height: 25px;
+    margin-right: 30px;
+}
+/*FOOTER STYLES*/
+footer {
+    background-color: white;
+}
+div#socialft {
+    text-align: center;
+    margin-top: 20px;
+}
+div#socialft a img {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+p.footer {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    text-align: center;
+    line-height: 90px;
+}
+span.underline {
+    text-decoration: underline;
+}
+form#signup {
+    text-align: center;
+}
+input.signupft {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: .9em;
+    font-weight: lighter;
+    height: 50px;
+}
+input.signupft[type="submit"] {
+    width: 120px;
+
+    border: none;
+    color: white;
+    background-color: rgb(170, 170, 170);
+}
+input.signupft[type="text"] {
+    width: 300px;
+    text-indent: 20px;
+    border:1px solid rgb(216, 216, 216);
+}
+
+
+/*SHOP STYLES*/
+/*@PraisesPJMT: Write the code to your SHOPE page styles here*/
+div#category {
+    text-align: center;
+}
+div#category a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: 200;
+    padding: 0 30px;
+}
+div#category a.middle {
+    border-left: .8px solid rgb(216, 216, 216);
+    border-right: .8px solid rgb(216, 216, 216);
+}
+hr {
+    color:  rgb(216, 216, 216);
+    margin: 0 30px;
+}
+div#bottom {
+    text-align: center;
+    margin: 60px auto;
+}
+div#bottom a {
+    font-size: 1.4em;
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+}
+div#product {
+    margin: 0 30px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+.box {
+    width: 160px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+}
+.image {
+    height: 200px;
+    position: relative;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.details {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px 0;
+}
+div.details .productname a:visited, div.details .productname a:active {
+    color: black;
+}
+.productname {
+    font-size: .7em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.price {
+    font-size: .6em;
+    font-weight: 200;
+}
+.hover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.hover .overlay {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay .view-btn {
+    width: 90px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    font-weight: 300;
+    font-size: smaller;
+    border-radius: 1px;
+    background-color: black;
+}
+.hover {
+    visibility: hidden;
+}
+.box:hover .hover {
+    visibility: visible;
+}
+/*Product Pages Styles*/
+div#prodhead {
+    text-align: left;
+    margin: 0 30px;
+    display: flex;
+}
+div#prodhead a {
+    text-decoration: none;
+    color: black;
+    font-size: .9em;
+    font-weight: 200;
+}
+div#bottom {
+    margin: 0 30px;
+}
+div#bottom p#otherprod {
+    font-size: 2em;
+    text-align: left;
+    font-weight: bold;
+} 
+
+div#productdisplay {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 30px;
+
+}
+div.view img {
+    display: block;
+    width: 50px;
+    margin-bottom: 10px;
+}
+div.display img {
+    width: 90%;
+    margin: 0 10px;
+}
+div.description {
+    width: 180%;
+}
+.display img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    position: relative;
+}
+.image2 {
+    visibility: hidden;
+}
+h3.prodname {
+    font-size: 1.4em;
+    margin: 20px 0;
+}
+h4.describe, form.describe {
+    font-size: .9em;
+    font-weight: 400;
+    margin: 20px 0;
+}
+p.pricetag {
+    font-size: 1em;
+    font-weight: 600;
+    margin: 20px 0;
+}
+p.describe, ul.describe {
+    font-size: .8em;
+}
+select#size {
+    width: 100%;
+    height: 50px;
+    padding: 0 5px 0 30px;
+}
+input[type="number"] {
+    width: 60px;
+    height: 50px;
+    padding: 0 5px 0 30px;
+}
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    color: white;
+    border: none;
+    background-color: rgb(170, 170, 170);
+
+}
+
+
+
+/*LOOKBOOK STYLES*/
+/*@Wealth: Write the code to your LOOKBOOK page styles here*/
+
+/*ABOUT STYLES*/
+/*@Air: Write the code to your ABOUT page styles here*/
+
+/*CONTACT STYLES*/
+/*@Omode Mary: Write the code to your CONTACT page styles here*/
